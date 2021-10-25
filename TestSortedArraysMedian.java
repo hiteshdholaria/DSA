@@ -305,6 +305,138 @@ public class TestSortedArraysMedian {
     }
 
     @Test
+    public void testGreaterNumbers51() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 20, 0, 5);
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void testGreaterNumbers52() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 2, 6);
+        Assert.assertEquals(5, result);
+    }
+
+    @Test
+    public void testGreaterNumbers53() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 2, 6);
+        Assert.assertEquals(5, result);
+    }
+
+    @Test
+    public void testGreaterNumbers54() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 2, 6);
+        Assert.assertEquals(5, result);
+    }
+
+    @Test
+    public void testGreaterNumbers55() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 20, 2, 6);
+        Assert.assertEquals(3, result);
+    }
+
+    @Test
+    public void testGreaterNumbers56() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 25, 2, 6);
+        Assert.assertEquals(3, result);
+    }
+
+    @Test
+    public void testGreaterNumbers57() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 30, 2, 6);
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void testGreaterNumbers58() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 35, 2, 6);
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void testGreaterNumbers59() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 40, 2, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testGreaterNumbers60() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 45, 2, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testGreaterNumbers61() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 0, 0);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testGreaterNumbers62() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 0, 0);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testGreaterNumbers63() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 0, 0);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testGreaterNumbers64() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 2, 2);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testGreaterNumbers65() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 2, 2);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testGreaterNumbers66() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 2, 2);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testGreaterNumbers67() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 20, 2, 2);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testGreaterNumbers68() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 25, 2, 2);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testGreaterNumbers69() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 25, 8, 8);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testGreaterNumbers70() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 40, 8, 8);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testGreaterNumbers71() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 50, 8, 8);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testGreaterNumbers72() {
+        int result = SortedArraysMedian.greaterNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 55, 8, 8);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
     public void testSmallerNumbers1() {
         int result = SortedArraysMedian.smallerNumbers(IntStream.of(50, 50, 50, 50, 50, 50).toArray(), 50);
         Assert.assertEquals(0, result);
@@ -575,6 +707,121 @@ public class TestSortedArraysMedian {
     }
 
     @Test
+    public void testSmallerNumbers46() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 50, 3, 8);
+        Assert.assertEquals(5, result);
+    }
+
+    @Test
+    public void testSmallerNumbers47() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 0, 4);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers48() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 0, 4);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers49() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 0, 4);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testSmallerNumbers50() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 20, 0, 4);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testSmallerNumbers51() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 25, 0, 4);
+        Assert.assertEquals(4, result);
+    }
+
+    @Test
+    public void testSmallerNumbers52() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 30, 0, 4);
+        Assert.assertEquals(4, result);
+    }
+
+    @Test
+    public void testSmallerNumbers53() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 35, 0, 4);
+        Assert.assertEquals(5, result);
+    }
+
+    @Test
+    public void testSmallerNumbers54() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 1, 3);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers55() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 20, 1, 3);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers56() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 25, 1, 3);
+        Assert.assertEquals(3, result);
+    }
+
+    @Test
+    public void testSmallerNumbers57() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 0, 0);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers58() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 0, 0);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers59() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 0, 0);
+        Assert.assertEquals(1, result);
+    }
+////
+
+    @Test
+    public void testSmallerNumbers60() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 6, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers61() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 30, 6, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers62() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 40, 6, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testSmallerNumbers63() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 45, 6, 6);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testSmallerNumbers64() {
+        int result = SortedArraysMedian.smallerNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 100, 6, 6);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
     public void testEqualNumbers1() {
         int result = SortedArraysMedian.equalNumbers(IntStream.of().toArray(), 40);
         Assert.assertEquals(0, result);
@@ -782,6 +1029,108 @@ public class TestSortedArraysMedian {
     public void testEqualNumbers35() {
         int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 50);
         Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testEqualNumbers36() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 50, 3, 7);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers37() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 50, 3, 8);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testEqualNumbers38() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 0, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers39() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 0, 6);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testEqualNumbers40() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 0, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers41() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 20, 0, 6);
+        Assert.assertEquals(3, result);
+    }
+
+    @Test
+    public void testEqualNumbers42() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 25, 0, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers43() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 30, 0, 6);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testEqualNumbers44() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 35, 0, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers45() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 40, 0, 6);
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void testEqualNumbers46() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 50, 0, 6);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers47() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 5, 0, 0);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers48() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 10, 0, 0);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testEqualNumbers49() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 0, 0);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers50() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 15, 3, 3);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
+    public void testEqualNumbers51() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 20, 3, 3);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void testEqualNumbers52() {
+        int result = SortedArraysMedian.equalNumbers(IntStream.of(10, 20, 20, 20, 30, 40, 40, 40, 50).toArray(), 25, 3, 3);
+        Assert.assertEquals(0, result);
     }
 
 }
